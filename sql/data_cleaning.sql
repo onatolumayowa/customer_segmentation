@@ -1,7 +1,5 @@
 /*
  File: data_cleaning.sql
- Author: Your Name
- Date: 2025-11-07
  Description:
  This SQL script performs data cleaning for the Olist E-commerce database. 
  

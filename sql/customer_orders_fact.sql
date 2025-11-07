@@ -1,7 +1,5 @@
 /*
  File: customer_orders_fact.sql
- Author: Your Name
- Date: 2025-11-07
  Description:
  This SQL script creates a customer-level fact table aggregating orders, payments, items, and reviews.
  
