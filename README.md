@@ -51,7 +51,7 @@ This project aims to:
 
 The dataset used for this project represents transaction-level customer behavior that has been transformed into RFM metrics. After preprocessing, feature engineering, and clustering, the final dataset contains the following columns:
 
-**Final Dataset Fields** [Check here](https://github.com/onatolumayowa/customer_segmentation/blob/main/data/processed/rfm_marketing_segments.csv)
+[Final Dataset Fields](https://github.com/onatolumayowa/customer_segmentation/blob/main/data/processed/rfm_marketing_segments.csv)
 
 |Column Name|Description|
 |-----------|-----------|
@@ -62,7 +62,7 @@ The dataset used for this project represents transaction-level customer behavior
 |Cluster|The customer’s assigned cluster (e.g., 0, 1, 2, 3) from the K-Means algorithm.|
 |segment_label|Human-friendly segment name mapped from each cluster (e.g., Champions, Loyal, At Risk).|
 
-**Where the Dataset Comes From**
+[Where the Dataset Comes From](https://github.com/onatolumayowa/customer_segmentation/tree/main/data/raw)
 
 - Raw transaction data contained purchase IDs, customer IDs, purchase dates, and amounts.
 
