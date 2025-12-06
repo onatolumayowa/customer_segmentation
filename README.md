@@ -81,6 +81,7 @@ Before performing RFM analysis and clustering, several cleaning and transformati
 [Data Cleaning](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/data_cleaning.sql)
 
 - Remove Duplicates
+
   - Checked for duplicate transaction records and removed them to avoid inflating frequency or monetary values.
 
 - Handle Missing Values
@@ -92,3 +93,12 @@ Before performing RFM analysis and clustering, several cleaning and transformati
 [Final Fact Table](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/customer_orders_fact.sql)
 
 [Feature Engineering (Creating RFM Metrics)](https://github.com/onatolumayowa/customer_segmentation/blob/main/notebooks/rfm_analysis_and_kmeans_clustering.ipynb)
+
+- Recency
+
+Calculated as:
+
+```python
+recency = (analysis_date - last_purchase_date).days
+```python
+
