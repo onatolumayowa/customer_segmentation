@@ -27,10 +27,49 @@ To make informed decisions, the business needs a clear, data-driven way to group
 
 This project aims to:
 
-**Primary Objectives**
+- Primary Objectives
 
-- Segment customers using RFM analysis (Recency, Frequency, Monetary) to identify patterns in customer value and engagement.
+  - Segment customers using RFM analysis (Recency, Frequency, Monetary) to identify patterns in customer value and engagement.
 
-- Use clustering (K-Means) to categorize customers into distinct behavioral groups.
+  - Use clustering (K-Means) to categorize customers into distinct behavioral groups.
 
-- Build an interactive Power BI dashboard to visualize segments and monitor customer performance.
+  - Build an interactive Power BI dashboard to visualize segments and monitor customer performance.
+
+- Insight Objectives (Answering “Why?”)
+
+  - Explain why each customer segment behaves the way it does using annotations, tooltips, and DAX-based insights.
+
+  - Identify drivers of high customer value, churn risk, and cross-selling opportunities.
+
+  - Provide recommendations for marketing actions based on segment behavior.
+
+- Outcome Objectives
+
+  - Enable the business to improve retention, allocate marketing budgets more effectively, and personalize customer communication.
+
+### Dataset Description
+
+The dataset used for this project represents transaction-level customer behavior that has been transformed into RFM metrics. After preprocessing, feature engineering, and clustering, the final dataset contains the following columns:
+
+**Final Dataset Fields** [Check here](data\processed)
+
+|Column Name|Description|
+|-----------|-----------|
+|customer_id|A unique identifier assigned to each customer.|
+|recency|Number of days since the customer’s last purchase. Lower values = more recent activity.|
+|frequency|Total number of purchases made by the customer within the analysis period.|
+|monetary|Total amount spent by the customer. Represents customer lifetime value in currency.|
+|Cluster|The customer’s assigned cluster (e.g., 0, 1, 2, 3) from the K-Means algorithm.|
+|segment_label|Human-friendly segment name mapped from each cluster (e.g., Champions, Loyal, At Risk).|
+
+**Where the Dataset Comes From**
+
+- Raw transaction data contained purchase IDs, customer IDs, purchase dates, and amounts.
+
+- Data was cleaned to remove null values, duplicates, and invalid transactions using SQL.
+
+- RFM features were engineered using Python.
+
+- K-Means clustering grouped customers based on RFM similarity.
+
+- Results were exported to Power BI for interactive dashboarding.
