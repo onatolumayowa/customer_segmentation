@@ -51,7 +51,7 @@ This project aims to:
 
 The dataset used for this project represents transaction-level customer behavior that has been transformed into RFM metrics. After preprocessing, feature engineering, and clustering, the final dataset contains the following columns:
 
-**Final Dataset Fields** [Check here](data\processed)
+**Final Dataset Fields** [Check here](https://github.com/onatolumayowa/customer_segmentation/blob/main/data/processed/rfm_marketing_segments.csv)
 
 |Column Name|Description|
 |-----------|-----------|
