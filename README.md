@@ -73,3 +73,22 @@ The dataset used for this project represents transaction-level customer behavior
 - K-Means clustering grouped customers based on RFM similarity.
 
 - Results were exported to Power BI for interactive dashboarding.
+
+### Data Preparation & Cleaning Steps
+
+Before performing RFM analysis and clustering, several cleaning and transformation steps using SQL were applied to ensure data quality and accuracy.
+
+[Data Cleaning](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/data_cleaning.sql)
+
+- Remove Duplicates
+  - Checked for duplicate transaction records and removed them to avoid inflating frequency or monetary values.
+
+- Handle Missing Values
+
+  - Verified that important fields (customer_id, transaction_date, amount) contained no nulls.
+
+  - Removed or corrected incomplete rows if necessary.
+
+[Final Fact Table](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/customer_orders_fact.sql)
+
+[Feature Engineering (Creating RFM Metrics)](https://github.com/onatolumayowa/customer_segmentation/blob/main/notebooks/rfm_analysis_and_kmeans_clustering.ipynb)
