@@ -99,6 +99,7 @@ Before performing RFM analysis and clustering, several cleaning and transformati
 Calculated as:
 
 ```python
-recency = (analysis_date - last_purchase_date).days
-```python
 
+recency = (analysis_date - last_purchase_date).days
+
+```
