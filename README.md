@@ -80,17 +80,39 @@ Before performing RFM analysis and clustering, several cleaning and transformati
 
 [Data Cleaning](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/data_cleaning.sql)
 
-- Remove Duplicates
+**Remove Duplicates**
 
-  - Checked for duplicate transaction records and removed them to avoid inflating frequency or monetary values.
+- Checked for duplicate transaction records and removed them to avoid inflating frequency or monetary values.
 
-- Handle Missing Values
+**Handle Missing Values**
 
-  - Verified that important fields (customer_id, transaction_date, amount) contained no nulls.
+- Verified that important fields (customer_id, transaction_date, amount) contained no nulls.
 
-  - Removed or corrected incomplete rows if necessary.
+- Removed or corrected incomplete rows if necessary.
 
-[Final Fact Table](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/customer_orders_fact.sql)
+[Customer Fact Table](https://github.com/onatolumayowa/customer_segmentation/blob/main/sql/customer_orders_fact.sql)
+
+Before performing RFM analysis, a master customer-level fact table was created using SQL. This table aggregates all relevant customer information from multiple transactional tables such as orders, payments, reviews, and order items.
+
+The SQL script below performs several transformations that turn raw transactional data into a structured dataset suited for RFM feature engineering, customer segmentation, and further analysis.
+
+**What the Code Does**
+
+- The SQL query combines multiple tables and produces one row per customer containing:
+
+  - Total purchases
+
+  - Total items bought
+
+  - Total money spent
+
+  - First & last purchase dates
+
+  - Average review score
+
+  - Average order value
+
+This creates the foundation for RFM analysis and customer segmentation.
 
 [Feature Engineering (Creating RFM Metrics)](https://github.com/onatolumayowa/customer_segmentation/blob/main/notebooks/rfm_analysis_and_kmeans_clustering.ipynb)
 
