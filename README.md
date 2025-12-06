@@ -27,7 +27,7 @@ To make informed decisions, the business needs a clear, data-driven way to group
 
 This project aims to:
 
-** Primary Objectives
+**Primary Objectives**
 
 - Segment customers using RFM analysis (Recency, Frequency, Monetary) to identify patterns in customer value and engagement.
 
